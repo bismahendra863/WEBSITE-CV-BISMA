@@ -1919,8 +1919,58 @@ body.is-loaded .hero__visual[data-reveal] {
 }
 
 @media (max-width: 780px) {
+  .container {
+    width: min(var(--container), calc(100% - 24px));
+  }
+
   .section {
     padding: 72px 0;
+  }
+
+  .hero {
+    padding-top: 28px;
+  }
+
+  .hero__grid {
+    gap: 18px;
+  }
+
+  .hero__title {
+    margin-top: 14px;
+  }
+
+  .hero__name {
+    font-size: clamp(30px, 9vw, 42px);
+  }
+
+  .hero__headline {
+    font-size: 17px;
+    margin-top: 8px;
+  }
+
+  .hero__lead {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .hero__meta {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .meta {
+    width: 100%;
+  }
+
+  .hero__actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .btn--lg {
+    width: 100%;
   }
 
   .nav__toggle {
@@ -1967,12 +2017,67 @@ body.is-loaded .hero__visual[data-reveal] {
     grid-template-columns: 1fr;
   }
 
+  .sectionLayout__body {
+    gap: 12px;
+  }
+
   .grid2 {
     grid-template-columns: 1fr;
   }
 
   .grid3 {
     grid-template-columns: 1fr;
+  }
+
+  .card,
+  .timelineItem__card,
+  .sidebarCard {
+    padding: 14px;
+  }
+
+  .profileCard__info {
+    padding: 14px;
+  }
+
+  .pill {
+    font-size: 11px;
+  }
+
+  .experienceTabs__bar {
+    width: 100%;
+  }
+
+  .experienceTabs__tab {
+    flex: 1 1 calc(50% - 6px);
+    text-align: center;
+    padding: 9px 10px;
+  }
+
+  .timeline {
+    padding-left: 14px;
+    gap: 10px;
+  }
+
+  .timeline::before {
+    left: 3px;
+  }
+
+  .timelineItem__dot {
+    left: -14px;
+    top: 16px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .timelineItem__top {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .timelineItem__actions {
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .form__grid {
