@@ -1968,13 +1968,11 @@ body.is-loaded .hero__visual[data-reveal] {
   }
 
   .grid2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+    grid-template-columns: 1fr;
   }
 
   .grid3 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+    grid-template-columns: 1fr;
   }
 
   .form__grid {
@@ -1988,16 +1986,6 @@ body.is-loaded .hero__visual[data-reveal] {
 
   .footer__links {
     justify-content: flex-start;
-  }
-}
-
-@media (max-width: 360px) {
-  .grid2 {
-    grid-template-columns: 1fr;
-  }
-
-  .grid3 {
-    grid-template-columns: 1fr;
   }
 }
 
